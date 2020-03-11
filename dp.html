@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Register</h1>
+    <input type="checkbox" id="cb1" onclick="myFunction1()">Food <br>
+    <input type="checkbox" id="cb2"  onclick="myFunction2()">Water <br>
+    <input type="checkbox" id="cb3" onclick="myFunction3()">Shelter <br>
+    <input type="checkbox" id="cb4" onclick="myFunction4()">First Aid <br>
+    <button type="button" name="button" id="Req">Send Request</button>
+    <!-- <p id="text" style="display:none">Checkbox is CHECKED!</p> -->
+
+    <script>
+
+
+    function myFunction1() {
+  var checkBox1 = document.getElementById("cb1");
+  // var text = document.getElementById("text");
+  if (checkBox1.checked == true){
+    var a= "1";
+    console.log(a);
+  } else {
+     var a="0";
+     console.log(a);
+  }
+}
+
+function myFunction2() {
+var checkBox2 = document.getElementById("cb2");
+// var text = document.getElementById("text");
+if (checkBox2.checked == true){
+var b= "1";
+console.log(b);
+} else {
+ var b="0";
+ console.log(b);
+}
+}
+
+function myFunction3() {
+var checkBox3 = document.getElementById("cb3");
+var text = document.getElementById("text");
+if (checkBox3.checked == true){
+var c= "1";
+console.log(c);
+} else {
+ var c="0";
+ console.log(c);
+}
+}
+
+function myFunction4() {
+var checkBox4 = document.getElementById("cb4");
+var text = document.getElementById("text");
+if (checkBox4.checked == true){
+var d= "1";
+console.log(d);
+} else {
+ var d="0";
+ console.log(d);
+}
+}
+
+var button=document.getElementById("Req")
+button.addEventListener("click", function() {
+  alert(a);
+})
+
+
+</script>
+
+  </body>
+</html>
